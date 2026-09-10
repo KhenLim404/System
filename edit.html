@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Record</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="edit">
+  <nav class="top-nav">
+    <div class="brand">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24" class="brand-svg">
+          <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="sidebar-nav">
+      <a class="nav-link" href="index.html">Dashboard</a>
+      <a class="nav-link" href="records.html">Records</a>
+      <a class="nav-link" href="add.html">Add Record</a>
+      <a class="nav-link active" href="edit.html">Edit Record</a>
+    </div>
+  </nav>
+
+  <div class="app-shell">
+    <main class="main-content">
+      <section class="topbar">
+        <div>
+          <span class="eyebrow">Records Manager</span>
+          <h1>Edit Record</h1>
+        </div>
+        <div class="topbar-actions">
+          <a class="primary-button" href="records.html">Records List</a>
+        </div>
+      </section>
+
+      <section class="panel form-panel">
+        <section class="panel-header">
+          <div>
+            <span class="panel-kicker">Update Information</span>
+            <h2>Edit Student Record</h2>
+          </div>
+        </section>
+
+        <section class="form-container">
+          <form id="editRecordForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="editStudentName">Student Name</label>
+                <input type="text" id="editStudentName" name="studentName" required />
+              </div>
+
+              <div class="form-group">
+                <label for="editStudentId">Student ID</label>
+                <input type="text" id="editStudentId" name="studentId" required />
+              </div>
+
+              <div class="form-group">
+                <label for="editDepartment">Department</label>
+                <input type="text" id="editDepartment" name="department" required />
+              </div>
+
+              <div class="form-group">
+                <label for="editProgram">Program</label>
+                <input type="text" id="editProgram" name="program" required />
+              </div>
+
+              <div class="form-group">
+                <label for="editEmail">Email</label>
+                <input type="email" id="editEmail" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="editPhone">Phone</label>
+                <input type="tel" id="editPhone" name="phone" required />
+              </div>
+
+              <div class="form-group">
+                <label for="editYear">Enrollment Year</label>
+                <select id="editYear" name="year" required>
+                  <option>2022</option>
+                  <option>2023</option>
+                  <option>2024</option>
+                  <option>2025</option>
+                  <option>2026</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="editStatus">Status</label>
+                <select id="editStatus" name="status" required>
+                  <option value="Active">Active</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Graduated">Graduated</option>
+                  <option value="Inactive">Inactive</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" class="secondary-button" id="cancelEdit">Cancel</button>
+              <button type="submit" class="primary-button">Update Record</button>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

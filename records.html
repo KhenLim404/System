@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InfoCore Records</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="records">
+  <nav class="top-nav">
+    <div class="brand">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24" class="brand-svg">
+          <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="sidebar-nav">
+      <a class="nav-link" href="index.html">Dashboard</a>
+      <a class="nav-link active" href="records.html">Records</a>
+      <a class="nav-link" href="add.html">Add Record</a>
+      <a class="nav-link" href="edit.html">Edit Record</a>
+    </div>
+  </nav>
+
+  <div class="app-shell">
+    <main class="main-content">
+      <section class="topbar">
+        <div>
+          <span class="eyebrow">Records Manager</span>
+          <h1>Records</h1>
+        </div>
+        <div class="topbar-actions">
+          <a class="primary-button" href="add.html">+ Add Record</a>
+        </div>
+      </section>
+
+      <section class="panel records-panel">
+        <section class="panel-header records-panel-header">
+          <div>
+            <span class="panel-kicker">Registration List</span>
+            <h2>All Records</h2>
+          </div>
+          <div class="records-tools">
+            <div class="search-wrap">
+              <input type="search" id="searchRecords" placeholder="Search records" class="search-input" />
+            </div>
+            <a class="secondary-button" href="add.html">Create New</a>
+          </div>
+        </section>
+
+        <section class="table-wrap">
+          <table class="records-table">
+            <thead>
+              <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Program</th>
+                <th>Status</th>
+                <th>Year</th>
+                <th>Email</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="recordsTableBody">
+            </tbody>
+          </table>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

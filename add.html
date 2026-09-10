@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Record</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="add">
+  <nav class="top-nav">
+    <div class="brand">
+      <div class="brand-icon">
+        <svg viewBox="0 0 24 24" class="brand-svg">
+          <path d="M3 3h7v7H3zM14 3h7v7h-7zM3 14h7v7H3zM14 14h7v7h-7z" fill="currentColor" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="sidebar-nav">
+      <a class="nav-link" href="index.html">Dashboard</a>
+      <a class="nav-link" href="records.html">Records</a>
+      <a class="nav-link active" href="add.html">Add Record</a>
+      <a class="nav-link" href="edit.html">Edit Record</a>
+    </div>
+  </nav>
+
+  <div class="app-shell">
+    <main class="main-content">
+      <section class="topbar">
+        <div>
+          <span class="eyebrow">Records Manager</span>
+          <h1>Add Record</h1>
+        </div>
+        <div class="topbar-actions">
+          <a class="primary-button" href="records.html">View Records</a>
+        </div>
+      </section>
+
+      <section class="panel form-panel">
+        <section class="panel-header">
+          <div>
+            <span class="panel-kicker">New Information</span>
+            <h2>Create Student Record</h2>
+          </div>
+        </section>
+
+        <section class="form-container">
+          <form id="recordForm" novalidate>
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="studentName">Student Name</label>
+                <input type="text" id="studentName" name="studentName" required />
+              </div>
+
+              <div class="form-group">
+                <label for="studentId">Student ID</label>
+                <input type="text" id="studentId" name="studentId" required />
+              </div>
+
+              <div class="form-group">
+                <label for="department">Department</label>
+                <input type="text" id="department" name="department" required />
+              </div>
+
+              <div class="form-group">
+                <label for="program">Program</label>
+                <input type="text" id="program" name="program" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+
+              <div class="form-group">
+                <label for="year">Enrollment Year</label>
+                <select id="year" name="year" required>
+                  <option>2022</option>
+                  <option>2023</option>
+                  <option selected>2024</option>
+                  <option>2025</option>
+                  <option>2026</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="status">Status</label>
+                <select id="status" name="status" required>
+                  <option value="Active" selected>Active</option>
+                  <option value="Pending">Pending</option>
+                  <option value="Graduated">Graduated</option>
+                  <option value="Inactive">Inactive</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="reset" class="secondary-button reset-button">Reset</button>
+              <button type="submit" class="primary-button">Save Record</button>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
