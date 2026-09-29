@@ -1,0 +1,14 @@
+{
+  "name": "system-main",
+  "version": "1.0.0",
+  "description": "Student records dashboard with SQLite-backed CRUD",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mysql2": "^3.24.4",
+    "sqlite3": "^5.1.7"
+  }
+}
